@@ -28,7 +28,7 @@ This project implements a complete control pipeline for a 5-DOF **KUKA YouBot** 
 ## 🛠️ Tech Stack
 
 * **Framework:** ROS (Robot Operating System)
-* **Languages:** Python, C++
+* **Languages:** Python
 * **Libraries:** NumPy, SciPy
 * **Simulation:** Rviz, Gazebo
 

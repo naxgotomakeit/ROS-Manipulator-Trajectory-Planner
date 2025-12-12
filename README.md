@@ -23,10 +23,9 @@ The system calculates the robot's state using **Jacobian matrices**, solves traj
 ### Key Features:
 * **Forward Kinematics (FK):** Calculated end-effector poses from joint angles using standard DH parameters.
 * **Jacobian-based Control:** Implemented analytical Jacobian computation for velocity control and **Singularity Detection** to ensure safe operation.
-* **Inverse Kinematics (IK):** Implemented a numerical IK solver using the **Pseudo-Inverse method** ($\dot{q} = J^{\dagger} v$) to handle robot singularities and ensure smooth joint velocities.
+* **Inverse Kinematics (IK):** Implemented a numerical IK solver using the **Pseudo-Inverse method** (`q_dot = J_pinv * v`) to handle robot singularities and ensure smooth joint velocities.
 * **Trajectory Planning:** Capable of executing complex paths defined in data files (e.g., modifying target points and trajectory shapes).
 * **ROS Integration:** Developed a custom ROS node to listen to trajectory topics and publish `tf` (transform) data for visualization in Rviz.
----
 
 ## 🛠️ Tech Stack
 
